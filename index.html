@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chatwoot Widget</title>
+</head>
+<body>
+<script>
+  (function(d,t) {
+    var BASE_URL="https://chatwoot.srv849550.hstgr.cloud";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'xHARLucr7AoVUxMbv7i3Uo7e',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+</body>
+</html>
